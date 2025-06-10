@@ -1,4 +1,4 @@
-import java.awt.*;
+package Classes;
 
 public class Estadia {
     private Cachorro cachorro;

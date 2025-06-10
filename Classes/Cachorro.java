@@ -1,3 +1,5 @@
+package Classes;
+
 public class Cachorro {
     public String nome;
     private String raca;

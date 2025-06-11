@@ -1,4 +1,4 @@
-package Classes;
+package src.Classes;
 
 public class Estadia {
     private Cachorro cachorro;

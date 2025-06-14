@@ -14,12 +14,12 @@
    <top>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="226.0" fitWidth="319.0" layoutX="187.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="226.0" fitWidth="230.0" layoutX="187.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Imagens/logo.png" />
                </image>
             </ImageView>
-            <Label fx:id="wrongLogin" layoutX="244.0" layoutY="213.0" prefHeight="18.0" prefWidth="110.0" textFill="RED">
+            <Label fx:id="wrongLogin" layoutX="184.0" layoutY="213.0" prefHeight="18.0" prefWidth="265.0" textFill="RED">
                <font>
                   <Font size="10.0" />
                </font></Label>

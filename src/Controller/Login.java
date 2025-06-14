@@ -39,10 +39,15 @@ public class Login {
 
             m.changeScene("AfterLoginClient.fxml");
         }
-        if(username.getText().toString().equals("Cliente") && password.getText().toString().equals("1234")){
+        if(username.getText().toString().equals("Adm") && password.getText().toString().equals("1234")){
             wrongLogin.setText("Sucesso");
 
-            m.changeScene("AfterLoginClient.fxml");
+            m.changeScene("AfterLoginAdm.fxml");
+        }
+        if(username.getText().toString().isEmpty() || password.getText().toString().isEmpty()){
+            wrongLogin.setText("Erro; Usuario ou senha está vazio");
+
+            m.changeScene("AfterLoginAdm.fxml");
         }
     }
 

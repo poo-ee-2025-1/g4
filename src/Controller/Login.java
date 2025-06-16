@@ -31,7 +31,7 @@ public class Login {
     public void userLogin(ActionEvent event) throws IOException {
         checkLogin();
     }
-
+    // Funcao que quando é apertado o botão verifica se há o login e muda o Scene para o uma interface especifica para um cliente ou funcionario
     private void checkLogin() throws IOException{
         Main m = new Main();
         if(username.getText().toString().equals("Cliente") && password.getText().toString().equals("1234")){

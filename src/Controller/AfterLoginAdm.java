@@ -10,6 +10,17 @@ import java.io.IOException;
 public class AfterLoginAdm {
     @FXML
     private Button logout;
+    @FXML
+    private Button cadastro;
+    @FXML
+    private Button services;
+    @FXML
+    private Button cadastrarClient;
+    @FXML
+    private Button agendarH;
+    @FXML
+    private Button relatorioP;
+
 
     public void userLogout(ActionEvent event) throws IOException {
         Main m = new Main();

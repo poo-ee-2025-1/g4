@@ -10,7 +10,7 @@ import java.io.IOException;
 public class AfterLoginClient {
     @FXML
     private Button logout;
-
+    //Botão que quando apertado retorna para a tela anterior de login
     public void userLogout(ActionEvent event) throws IOException{
         Main m = new Main();
         m.changeScene("main.fxml");

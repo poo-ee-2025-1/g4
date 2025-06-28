@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="ormlite-core-6.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Bibliotecas/ormlite-core-6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Bibliotecas/ormlite-jdbc-6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Bibliotecas/slf4j-api-2.0.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Bibliotecas/slf4j-simple-2.0.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Bibliotecas/sqlite-jdbc-3.46.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

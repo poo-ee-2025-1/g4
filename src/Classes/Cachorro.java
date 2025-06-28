@@ -1,27 +1,39 @@
 package src.Classes;
 
-public class Cachorro {
-    public String nome;
-    private String raca;
-    private int idade;
-    private double peso;
-    private String comportamento;
-    private String alimentacao;
+import com.j256.ormlite.field.DataType;
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
+@DatabaseTable(tableName = "cachorro")
+public class Cachorro {
+    @DatabaseField(generatedId = true)
+    private int id;
+    @DatabaseField(dataType = DataType.STRING)
+    public String nome;
+    @DatabaseField(dataType = DataType.STRING)
+    private String raca;
+    @DatabaseField(dataType = DataType.INTEGER)
+    private int idade;
+    @DatabaseField(dataType = DataType.DOUBLE)
+    private double peso;
+
+    public Cachorro(){
+
+    }
+
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
     public void setIdade(int idade) {
         this.idade = idade;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public void setAlimentacao(String alimentacao) {
-        this.alimentacao = alimentacao;
-    }
-
-    public void setComportamento(String comportamento) {
-        this.comportamento = comportamento;
     }
 
     public void setPeso(double peso) {
@@ -42,14 +54,6 @@ public class Cachorro {
 
     public double getPeso() {
         return peso;
-    }
-
-    public String getAlimentacao() {
-        return alimentacao;
-    }
-
-    public String getComportamento() {
-        return comportamento;
     }
 
     public String getRaca() {

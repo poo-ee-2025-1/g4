@@ -14,6 +14,8 @@ public class Cliente {
     private String nomeCompleto;
     @DatabaseField(dataType = DataType.STRING)
     private String numeroContato;
+    @DatabaseField(dataType = DataType.STRING)
+    private  String CPF;
     @ForeignCollectionField
     private ForeignCollection<ClienteDog> dogs;
 

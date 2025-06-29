@@ -26,4 +26,10 @@ public class AfterLoginAdm {
         Main m = new Main();
         m.changeScene("main.fxml");
     }
+
+    public void cadastroClient(ActionEvent event) throws  IOException{
+        Main m = new Main();
+        m.changeScene("CadastroCliente.fxml");
+    }
+
 }

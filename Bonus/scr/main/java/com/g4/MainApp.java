@@ -1,3 +1,4 @@
+// PACOTE ATUALIZADO: com.g4
 package com.g4;
 
 import javafx.application.Application;
@@ -12,9 +13,9 @@ public class MainApp extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            // Carrega o arquivo FXML a partir do novo caminho dentro da pasta Bonus
+            // Caminho do FXML ATUALIZADO com o novo pacote
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("/Bonus/src/main/resources/com/seuprojeto/view/CachorroView.fxml"));
+            loader.setLocation(MainApp.class.getResource("/Bonus/src/main/resources/com/g4/view/CachorroView.fxml"));
             VBox rootLayout = loader.load();
 
             // Cria a cena

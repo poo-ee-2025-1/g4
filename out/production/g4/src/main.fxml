@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.Login">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="226.0" fitWidth="230.0" layoutX="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagens/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="wrongLogin" layoutX="184.0" layoutY="213.0" prefHeight="18.0" prefWidth="265.0" textFill="RED">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="182.0" layoutY="18.0" text="Usuario:" textFill="#695313">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="183.0" layoutY="65.0" prefHeight="18.0" prefWidth="59.0" text="Senha:" textFill="#695313">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="249.0" layoutY="14.0" prefHeight="26.0" prefWidth="201.0" promptText="Digite o nome de usuario" />
+            <PasswordField fx:id="password" layoutX="248.0" layoutY="61.0" prefHeight="26.0" prefWidth="202.0" promptText="Digite a senha" />
+            <Button fx:id="login" layoutX="276.0" layoutY="109.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="14.0" prefWidth="48.0" style="-fx-background-color: #695313;" text="Entrar" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

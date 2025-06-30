@@ -1,8 +1,8 @@
-import java.awt.*;
+package src.Classes.model;
 
 public class Estadia {
     private Cachorro cachorro;
-    private Dono dono;
+    private Cliente cliente;
     private String dataEntrada;
     private String dataSaida;
     private String[] servicos;
@@ -20,8 +20,8 @@ public class Estadia {
         this.dataSaida = dataSaida;
     }
 
-    public void setDono(Dono dono) {
-        this.dono = dono;
+    public void setDono(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public void setServicos(String[] servicos) {
@@ -32,8 +32,8 @@ public class Estadia {
         return cachorro;
     }
 
-    public Dono getDono() {
-        return dono;
+    public Cliente getDono() {
+        return cliente;
     }
 
     public String getDataEntrada() {

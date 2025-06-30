@@ -11,15 +11,9 @@ public class AfterLoginAdm {
     @FXML
     private Button logout;
     @FXML
-    private Button cadastro;
-    @FXML
     private Button services;
     @FXML
     private Button cadastrarClient;
-    @FXML
-    private Button agendarH;
-    @FXML
-    private Button relatorioP;
 
 
     public void userLogout(ActionEvent event) throws IOException {
@@ -28,6 +22,10 @@ public class AfterLoginAdm {
 
     public void cadastroClient(ActionEvent event) throws  IOException{
         Main.changeScene("CadastroCliente.fxml");
+    }
+
+    public void cadastroOS(ActionEvent event) throws IOException{
+        Main.changeScene("GestaoOS.fxml");
     }
 
 }

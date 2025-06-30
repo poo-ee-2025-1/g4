@@ -33,6 +33,7 @@ public class DatabaseManager {
     private Dao<Cliente, Integer> clienteDao;
     private Dao<Cachorro, Integer> cachorroDao;
     private  Dao<ClienteDog, Integer> clienteDogDao;
+    private Dao<OrdemServico, Integer> ordemServicoDao;
 
     private void setup() throws SQLException {
         try {
@@ -41,10 +42,12 @@ public class DatabaseManager {
             TableUtils.createTableIfNotExists(connectionSource, Cliente.class);
             TableUtils.createTableIfNotExists(connectionSource, Cachorro.class);
             TableUtils.createTableIfNotExists(connectionSource, ClienteDog.class);
+            TableUtils.createTableIfNotExists(connectionSource, OrdemServico.class);
 
             clienteDao = DaoManager.createDao(connectionSource, Cliente.class);
             cachorroDao = DaoManager.createDao(connectionSource, Cachorro.class);
             clienteDogDao = DaoManager.createDao(connectionSource, ClienteDog.class);
+            ordemServicoDao = DaoManager.createDao(connectionSource, OrdemServico.class);
         } catch (SQLException e) {
             System.err.println("Falha ao configurar as tabelas e DAOs.");
             throw e; // Relança a exceção para que o construtor saiba que falhou.
@@ -54,7 +57,7 @@ public class DatabaseManager {
     public Dao<Cliente, Integer> getClienteDao(){return clienteDao;}
     public Dao<Cachorro, Integer> getCachorroDao(){return cachorroDao;}
     public Dao<ClienteDog, Integer> getClienteDogDao(){return clienteDogDao;}
-
+    public Dao<OrdemServico, Integer> getOrdemServicoDao(){return ordemServicoDao;}
     public void close() throws Exception {
         if (connectionSource != null){
             connectionSource.close();

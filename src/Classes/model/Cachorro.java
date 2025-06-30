@@ -67,4 +67,10 @@ public class Cachorro {
     public String getRaca() {
         return raca;
     }
+
+    @Override
+    public String toString() {
+        // Você pode retornar o que for mais útil. O nome geralmente é a melhor opção.
+        return this.getNome();
+    }
 }

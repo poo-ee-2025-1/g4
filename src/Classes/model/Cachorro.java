@@ -1,8 +1,10 @@
-package src.Classes;
+package src.Classes.model;
 
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
+
+import java.awt.*;
 
 @DatabaseTable(tableName = "cachorro")
 public class Cachorro {
@@ -19,6 +21,12 @@ public class Cachorro {
 
     public Cachorro(){
 
+    }
+    public Cachorro(String nome, String raca, int idade, double peso){
+        this.nome = nome;
+        this.raca = raca;
+        this.idade = idade;
+        this.peso = peso;
     }
 
 

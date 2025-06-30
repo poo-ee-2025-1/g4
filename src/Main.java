@@ -21,8 +21,8 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-    public void changeScene(String fxml) throws IOException{
-        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
+    public static void changeScene(String fxml) throws IOException{
+        Parent pane = FXMLLoader.load(Main.class.getResource(fxml));
         stg.getScene().setRoot(pane);
     }
 

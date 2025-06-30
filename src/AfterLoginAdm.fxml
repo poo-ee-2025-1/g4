@@ -34,7 +34,7 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Button layoutX="42.0" mnemonicParsing="false" text="Cadastros" />
-            <Button layoutX="493.0" mnemonicParsing="false" text="Serviços" />
+            <Button fx:id="services" layoutX="493.0" mnemonicParsing="false" onAction="#cadastroOS" text="Serviços" />
             <Button fx:id="cadastrarClient" layoutX="247.0" mnemonicParsing="false" onAction="#cadastroClient" text="Cadastrar Cliente" />
          </children>
       </AnchorPane>

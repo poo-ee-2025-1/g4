@@ -1,4 +1,4 @@
-package src.Classes;
+package src.Classes.model;
 
 public class Estadia {
     private Cachorro cachorro;

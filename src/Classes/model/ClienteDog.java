@@ -1,4 +1,4 @@
-package src.Classes;
+package src.Classes.model;
 //Classe que liga um id de cachorro a um cliente
 
 import com.j256.ormlite.field.DatabaseField;

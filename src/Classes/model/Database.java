@@ -1,4 +1,4 @@
-package src.Classes;
+package src.Classes.model;
 
 import java.sql.*;
 import com.j256.ormlite.jdbc.JdbcConnectionSource;

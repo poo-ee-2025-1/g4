@@ -23,13 +23,11 @@ public class AfterLoginAdm {
 
 
     public void userLogout(ActionEvent event) throws IOException {
-        Main m = new Main();
-        m.changeScene("main.fxml");
+        Main.changeScene("main.fxml");
     }
 
     public void cadastroClient(ActionEvent event) throws  IOException{
-        Main m = new Main();
-        m.changeScene("CadastroCliente.fxml");
+        Main.changeScene("CadastroCliente.fxml");
     }
 
 }

@@ -1,0 +1,3 @@
+Nós nos reunimos acerca do projeto, decidindo e lapidando o que seria a nossa proposta para um, e como este seria planejado e executado;
+Dito isso, foi votado numa creche para cachorros que tem funções separadas, tarefas para cada uma dessas funções, como check-in/out, funcionário, preço do serviço, os serviços, os donos dos cachorros, dados dos clientes;
+Nesse viés, após o termos feito, eu fiz com ajuda do Gemini Pro, o código pra representação do diagrama de classes "em" UML, para a gente poder adicionar no github, e mandei o código em mermaid para o líder, para que fosse postado no READ.ME, para a entrega;

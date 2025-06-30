@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/petshopdb"; // <<-- AJUSTE PARA O SEU BANCO DE DADOS
-    private static final String USER = "seu_usuario"; // <<-- AJUSTE SEU USUÁRIO
-    private static final String PASS = "sua_senha"; // <<-- AJUSTE SUA SENHA
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/petshopdb"; // rascunho do "bando de dados"
+    private static final String USER = "seu_usuario"; // rascunho do usuario
+    private static final String PASS = "sua_senha"; // rascunho da senha
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(DB_URL, USER, PASS);

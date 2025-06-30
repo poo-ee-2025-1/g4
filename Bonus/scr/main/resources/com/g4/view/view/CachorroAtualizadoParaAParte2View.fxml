@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.control.cell.*?> <?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seuprojeto.controller.CachorroController">
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.g4.controller.CachorroController">
     <children>
-        <TableView fx:id="cachorroTable" editable="true" prefHeight="200.0" prefWidth="200.0">
+        <TableView fx:id="cachorroTable" prefHeight="200.0" prefWidth="200.0">
             <columns>
                 <TableColumn fx:id="idColumn" text="ID" />
-                
-                <TableColumn fx:id="nomeColumn" text="Nome">
-                    <cellFactory>
-                        <TextFieldTableCell fx:factory="forTableColumn" />
-                    </cellFactory>
-                </TableColumn>
-
-                <TableColumn fx:id="racaColumn" text="Raça">
-                    <cellFactory>
-                        <TextFieldTableCell fx:factory="forTableColumn" />
-                    </cellFactory>
-                </TableColumn>
-                
-                <TableColumn fx:id="donoColumn" text="Dono">
-                    <cellFactory>
-                        <TextFieldTableCell fx:factory="forTableColumn" />
-                    </cellFactory>
-                </TableColumn>
-                
+                <TableColumn fx:id="nomeColumn" text="Nome" />
+                <TableColumn fx:id="racaColumn" text="Raça" />
+                <TableColumn fx:id="donoColumn" text="Dono" />
             </columns>
             <columnResizePolicy>
                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -58,7 +42,6 @@
         <HBox spacing="10.0" style="-fx-padding: 10;">
             <children>
                 <Button fx:id="salvarButton" onAction="#handleSalvarCachorro" text="Salvar" />
-                <Button fx:id="excluirButton" onAction="#handleExcluirCachorro" text="Excluir" />
             </children>
         </HBox>
     </children>

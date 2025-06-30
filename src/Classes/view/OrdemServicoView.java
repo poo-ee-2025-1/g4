@@ -10,19 +10,16 @@ import src.Classes.model.enums.StatusOS;
  */
 public class OrdemServicoView {
 
-    // Propriedades do JavaFX para cada campo que queremos exibir
+
     private final IntegerProperty id;
-    private final StringProperty clienteNome; // "Achatamos" o dado. Em vez de um objeto Cliente, temos só o nome.
+    private final StringProperty clienteNome; 
     private final StringProperty cachorroNome;
     private final ObjectProperty<StatusOS> status;
 
-    // Guarda uma referência ao modelo original, se precisarmos dele
+
     private final OrdemServico ordemServicoModel;
 
-    /**
-     * Construtor que faz a "tradução" do modelo para o ViewModel.
-     * @param os O objeto de modelo original vindo do serviço.
-     */
+
     public OrdemServicoView(OrdemServico os) {
         this.ordemServicoModel = os;
 
@@ -35,14 +32,14 @@ public class OrdemServicoView {
         this.cachorroNome = new SimpleStringProperty(os.getCachorro().getNome());
     }
 
-    // Métodos de propriedade (os famosos "xxxProperty()") que a TableView vai usar
+
 
     public IntegerProperty idProperty() { return id; }
     public StringProperty clienteNomeProperty() { return clienteNome; }
     public StringProperty cachorroNomeProperty() { return cachorroNome; }
     public ObjectProperty<StatusOS> statusProperty() { return status; }
 
-    // Podemos também expor o modelo original, se necessário
+
     public OrdemServico getOrdemServicoModel() {
         return ordemServicoModel;
     }

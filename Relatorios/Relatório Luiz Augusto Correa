@@ -1,51 +1,41 @@
-Inicialização do Relatório.
+RELATÓRIO DE DESENVOLVIMENTO E CONTRIBUIÇÕES INDIVIDUAIS
 
-Luiz Augusto 202403033
+Projeto: Sistema de Gestão de Creche de Pet
+Autor: Luiz Augusto
+Matrícula: 202403033
 
- Primeiramente fui responsável por criar as classes e o controller, basicamente o model e controller. Desta maneira, os commit mais essenciais
-foram o commit "Criando tabelas no banco de dados" que permitiu criar uma linha de raciocinio para direcionar melhor onde o programa estava indo
-visto que durante a crianção antes do banco de dados estava com uma grande dificuldade em como criar pedidos entre as classes na questão como eu 
-faria para cadastrar um cliente e como associar a essse cliente um cachorro e um serviço.
- Segudamente, outro commit de extrema importância foi a "Criado tabelas no banco de dados ; Foi feito o DAO, a ligação entre cliente e cachorro e 
-modificado onde fica o cadastro do cliente" , antes dela queria que na classe do cliente tivesse uma lista que seriam id's de cachorros para que
-assim seja possivel um cliente ter mais de um cachorro, no entanto, me parecia que é um tanto primitivo esse tipo de relação entre classes, de tal 
-com ajuda de uma inteligência artificial foi colocado a classe ClienteDog que serve unicamente para armazerar a relação entre ids entre um cliente 
-um cachorro, assim sendo mais flexivel e mais encapsulado o programa.
- Além disso o commit que adiciona o CRUD em si ao programa também foi de extrema importancia já que deu a funcionalidade as interfaces criadas em JavaFX.
-No entanto, ainda falta partes do programa, como por exemplo não foi implemantado a area do cliente, a visão é que seja possivel dele colocar um cpf
-e encontrar as ordens de serviço relacionadas a esse cpf, além disso, há também a falta de uma forma de cadastrar funcionarios que foi proposto no programa,
-ainda mais há problemas em relação ao banco de dados, já que de vez enquanto quando há uma ordem de serviço relacionada a um cachorro se clicar denovo na ordem
-o cachorro desaparece das opções.
- Sendo assim, a maior dificuldade do programa primeiramente foi vizualizar ele como um todo inicialmente, pois com a ideia inicial foi muito abrangente
-e acaba que tem muitas peças para poder ver um programa completo com tantas coisas necessárias, além disso a parte de controller e conexão com banco de dados e
-CRUD foram todas arduosas sendo necessário a ajuda de diversas ferramentas como Gemini Pro e tutoriais fornecidos pelo professor.
- De forma conclusiva, percebi que na criação de um software o planejamento prévio e a comunicação clara com escopos definidos é muito importante
-tão importante quanto a capacidade técnica de um grupo, pois nesse projeto houve uma comunicação falha o que causou problemas na produção, além disso
-consegui ver como o encapsulamento facilita na leitura do programa, como antes, versões anteriores o arquivos eram colocado de qualquer forma nas pastas 
-mas com uma melhor organização foi possivel deixar o programa mais legível. Ainda mais, aprendi como classes e um banco de dados comunicam entre si, tal como
-maneiras diversas de implementar o CRUD.
+1. Resumo das Responsabilidades
 
+No âmbito do presente projeto, atuei como o principal desenvolvedor responsável pela arquitetura das camadas de Modelo (Model) e Controle (Controller), abrangendo a modelagem de dados, a lógica de negócios e a persistência de dados.
 
+2. Detalhamento das Contribuições-Chave
 
+2.1. Definição da Estrutura de Persistência: O commit inicial, intitulado "Criando tabelas no banco de dados", foi um ponto de inflexão no desenvolvimento. A modelagem do banco de dados proporcionou uma base sólida e uma direção clara para a implementação das funcionalidades, resolvendo a dificuldade inicial de associar entidades complexas como Cliente, Cachorro e Serviço.
 
+2.2. Implementação de Relacionamento N:N (Muitos-para-Muitos): No commit "Criado tabelas no banco de dados ; Foi feito o DAO...", a arquitetura de relacionamento entre entidades foi significativamente aprimorada. A abordagem inicial, que previa uma lista de identificadores na classe Cliente, foi substituída pela criação de uma tabela de junção (ClienteDog). Esta solução, mais alinhada às boas práticas de banco de dados, estabeleceu um relacionamento N:N robusto e desacoplado, garantindo maior flexibilidade e manutenibilidade.
 
+2.3. Funcionalidade da Camada de Visão: A implementação das operações de CRUD (Create, Read, Update, Delete) foi essencial para conectar a camada de persistência com a interface gráfica (View) desenvolvida em JavaFX, permitindo que as interações do usuário resultassem em manipulações efetivas no banco de dados.
 
+3. Desafios e Diagnóstico do Estado Atual
 
+3.1. Dificuldades Encontradas: O principal desafio foi a abstração inicial da arquitetura completa do sistema, dado um escopo original muito amplo. A implementação da camada de acesso a dados (DAO) e a orquestração do fluxo de dados pelo Controller apresentaram uma curva de aprendizado acentuada, sendo necessário recorrer a materiais de apoio e ferramentas de IA (Gemini Pro) para superar os obstáculos técnicos.
 
+3.2. Funcionalidades Pendentes:
 
+Módulo de Consulta do Cliente (via CPF).
 
+Módulo de Cadastro e Gerenciamento de Funcionários.
 
+3.3. Problemas Identificados: Foi identificado um bug de consistência na interface, onde a associação de um cachorro a uma ordem de serviço é perdida visualmente após uma segunda interação de clique na mesma ordem.
 
+4. Conclusão e Competências Adquiridas
 
+Este projeto consolidou meu entendimento sobre a importância crítica do planejamento e da definição de escopo em engenharia de software, evidenciando como falhas na comunicação da equipe podem impactar diretamente a produtividade.
 
+Do ponto de vista técnico, obtive experiência prática com:
 
+Organização e Encapsulamento de Código: A refatoração da estrutura de pastas e classes melhorou drasticamente a legibilidade e a manutenção do sistema.
 
+Persistência de Dados: Aprendi a conectar uma aplicação Java a um banco de dados, implementando padrões de projeto como o DAO.
 
-
-
-
-
-
-
-
-
+Desenvolvimento Full-Stack (MVC): Ganhei uma visão clara de como as camadas Model, View e Controller interagem para construir uma aplicação funcional.

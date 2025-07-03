@@ -1,1 +1,46 @@
+RELATÓRIO DE DESENVOLVIMENTO E CONTRIBUIÇÕES INDIVIDUAIS
 
+Projeto: Sistema de Gestão de Creche de Pet
+Autor: Sofia Viana Mendes
+Matrícula: 202403053
+
+1. Atribuição do Cargo e Tarefa:
+
+À princípio, eu fiquei responsável por fazer o que seria a "view" do projeto, porém me foi atribuído posteriormente que ficaria em cargo dos testes do projeto, para ver se ele possuía algum erro e se estava coerente com o que pressumimos que seria o nosso projeto;
+
+2. Contribuição de Acordo com a Atribuição:
+
+Com o fato de os testes serem feitos ao final do projeto, eis o que foi contribuído:
+
+2.1: Erro de bibliotecas:
+
+Não haviamos lembrado que precisávamos adicionar as bibliotecas necessárias para que o projeto funcionar, de maneira manual. Dito isso, me lembrei que em java têm-se a ferramenta maven, que poderia facilitar o uso das bibliotecas, mas sem precisar que estas fossem adiciondas manualmente. Porém me foi recomendado que não fizesse uso dessa ferramenta, tendo em vista os fins didáticos de se ter que adiconar as biblitecas manualmente. Isso posto, esse fato me ajudou muito a entender melhor como a linguagem JAVA era mais profunda, dinâmica e abrangente. Nesse viés, aprendi mais sobre as bibliotecas, e as adicionei manualmente na pasta do projeto, para não haver erro quando alguém fosse baixar o projeto. 
+
+2.2: Testes Unitários:
+
+Comecei a faze-los, mas o código havia dado vários erros, por conta de algumas bibliotecas que estavam faltando, mas as adicionei, e o código foi compilado com sucesso no BlueJ, e tive que estudar um pouco mais sobre testes de software, para fazer testes mais funcionais e abrangentes.
+
+2.3: Correção de Códigos que apresentaram falhas no teste:
+
+Dito isso, alguns códigos como: OrdemServico.java, no path: src/Classes/model, havia alguns erros como:  data na parte do ano no formato errado, ao invés de: "yyyy" estava: "yyy", o que estava causando erros de sintaxe e falha no teste unitário correspondente, fora que havia o erro do fato do atributo "dataFechamento" ser privado, e "seu" get não havia sido colocado no código, para poder acessa-lo, por conta disso, tive de adiciona-lo no código, para o teste fosse feito com completude. 
+
+3. Contribuição Além do Atribuído:
+
+3.1 A AfterLoginAdm.fxml:
+
+Meu colega que ficou como main desenvolvedor me pediu para arrumar essa interface, pois esta estava muito "cru", então a estilizei utilizando o scene builder;
+
+3.2. Problemas no banco de dados:
+
+Meu colega me relatou que estávamos com problemas nos códigos: ClienteService.java, CadastroCliente.java (controller), CadastroCliente.java(classe), Cliente.fxml. Dito isso, estavamos com um problema que ao adicionar a informação do cliente e seu "pet", quando a deletavamos, a informação do clliente era apagada no banco de dados, mas a do cachorro ficava. Isso posto, o que fiz para ajuda-lo foi: no início da classe ClienteService, adicionei importações de biblioteca, decalrei a ordemServicoDao no contrutor, adicionei o método removerCachorro no final dessa mesma classe. No controller : CadastroCliente.java: adicionei o FXML Field para o novo botão dentro desta, adiconei o método handleDeletarCachorroAction, o agrupando aos outros "handle actions". E adicionei no CadastroCliente.fxml, dentro de <Pane> que contém os TextFields e botões, o novo botão. Após isso, mandei os códigos ao meu colega, que os ajustou no github, em sua branch.
+
+4. Considerações gerais: 
+
+Primeiramente queria dizer que não sou uma das maiores fãs da linguagem, mas após o curso, comecei a entender o quão vasta e interessante ela é, com uma comunidade extensa e ativa, disposta a se ajudar em fóruns e com feedbacks. Além disso, não era fã também da IDE bluej, mas após o professor Akira me instruir a usa-la, percebi que ela realmente é melhor para aprender melhor sobre a linguagem java, e como ela funciona, de uma maneira mais visual. Além disso, aprendi mais sobre o uso de bibliotecas, e como importa-las e acha-las, depois de procurar em vários sites versões e versões das do projeto, e quais as mais utilizadas e com um suporte maior de correção de bugs. Isso posto, aprendi também mais sobre comandos de java, já que para fazer os teste, e entender os códigos para os quais eu estava fazendo os testes e a interface, usei um livro da bibçioteca:  "JAVA in a nutshell" de: David Flanagan, que me ajudou a entender melhor sobre os comandos como: "catch", e do javap.jar: "subject.org, -gk signer algorithm size [pubfile[privfile]] (que inclusive precisava para um projeto da empresa júnior das engenharias)", algumas coisas do javakey, e os comandos com html e css. 
+
+Fora isso, aprendi também mais sobre práticas de teste de software, e como administra-las, e vários jeitos e tratativas de erros, como métodos para solucionar problemas: com o fluxo de gerência de riscos, técnica de análise de Preferência oara estimativas, técnica de Monte Carlo para estimativa, que achei interessantes, já que além dos tutoriais mandados pelo senhor, eu fui atrás de outro livro, o: "Teste de Software", de: Emerson Rios, Trayahú Moreira.
+
+Acredito que de futuro, irei tentar aprender mais sobre como construir a view de um projeto em java, e tentar entender mais sobre interfaces, já que a que eu vi ser utilizada em um projeto da empresa júnior, foi o figma, para design.3
+
+Conclusão: o curso foi interessante, eu sinceramente, no início, não gostava da linguagem java, mas após esse projeto, e trabalhar mais com a linguagem de uma maneira mais prática e ativa, comcecei a gosta dela e querer aprender mais sobre. Fora isso, gostei do comentário que o senhor fez ao me instruir sobre IDE's, não posso ficar acostumada a usar uma específica e não tentar utilizar outras e me desenvolver com elas, um bom programador usa realmente qualquer uma, levarei isso de lição de vida. Terei uma mente mais aberta para a linguagem e estudar mais sobre nas férias, e estudar mais sobre testes unitários, achei extremamente interessante, e não me vinha a mente de fazer isso no projeto, pensei que iria fazer a view, mas ao fazer os testes descobri o quão interessante é, e talvez no futuro me aprofundarei mais sobre o assunto e usar as técnicas aprendidas com a linguagem java, nas outras que conheço. Fora isso, com esse novo conhecimento sobre bibliotecas e possíveis sites para elas, irei tentar procuraar mais bibliotecas que facilitem meu trabalho, e o fato de java ser estruturado do jeito que é, me ajudou a enteder mais sobre contrução de sites e como faze-los e atribuir os objetos nos códigos e suas intereações, de maneira mais vísivel, já que quando trabalhei com JavaScrypt, não consegui entender muito bem.
+Portanto, o curso superou minhas expectativas, me ajudou a entender mais e aprender uma linguagem que eu não gostava, e que me ajudou a entender mais sobre práticas de programação, boas práticas e a lógica desta. 

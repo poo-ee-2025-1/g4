@@ -10,14 +10,6 @@ import src.Classes.exception.ClienteNaoEncontradoException;
 import java.sql.SQLException;
 import java.util.List;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-import src.Classes.service.ClienteService;
-import src.Classes.model.Cliente;
-import src.Classes.exception.ClienteNaoEncontradoException;
-
-import java.sql.SQLException;
-import java.util.List;
 
 public class ClienteServiceTest {
 

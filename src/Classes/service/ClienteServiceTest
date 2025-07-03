@@ -1,0 +1,79 @@
+package src.Classes.service;
+
+
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import src.Classes.service.ClienteService;
+import src.Classes.model.Cliente;
+import src.Classes.exception.ClienteNaoEncontradoException;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public class ClienteServiceTest {
+
+    public static void main(String[] args) {
+        ClienteService clienteService = new ClienteService();
+
+        try {
+            // Teste 1 - Cadastrar cliente com cachorro
+            System.out.println("=== Teste 1: Cadastrar Cliente com Cachorro ===");
+            clienteService.cadastrarClienteComCachorro(
+                "Maria Oliveira",
+                "maria@exemplo.com",
+                "123.456.789-00",
+                "Fido",
+                "Golden Retriever",
+                4,
+                22.0
+            );
+            System.out.println("✔ Cliente com cachorro cadastrado com sucesso!");
+
+            // Teste 2 - Listar todos os clientes
+            System.out.println("\n=== Teste 2: Listar todos os clientes ===");
+            List<Cliente> clientes = clienteService.listarTodosClientes();
+            for (Cliente cliente : clientes) {
+                System.out.println("Cliente: " + cliente.getNomeCompleto() + ", CPF: " + cliente.getCPF());
+            }
+
+            // Teste 3 - Buscar cliente por ID
+            System.out.println("\n=== Teste 3: Buscar cliente por ID ===");
+            if (!clientes.isEmpty()) {
+                int primeiroId = clientes.get(0).getId();
+                Cliente clienteBuscado = clienteService.buscarClientePorId(primeiroId);
+                if (clienteBuscado != null) {
+                    System.out.println("✔ Cliente encontrado: " + clienteBuscado.getNomeCompleto());
+                } else {
+                    System.out.println("✘ Cliente não encontrado.");
+                }
+
+                // Teste 4 - Atualizar cliente
+                System.out.println("\n=== Teste 4: Atualizar cliente ===");
+                clienteBuscado.setNomeCompleto("Maria Atualizada");
+                clienteService.atualizarCliente(clienteBuscado);
+                System.out.println("✔ Cliente atualizado com sucesso!");
+
+                // Teste 5 - Adicionar cachorro a cliente existente
+                System.out.println("\n=== Teste 5: Adicionar novo cachorro a cliente existente ===");
+                clienteService.adicionarCachorroAClienteExistente(primeiroId, "Toby", "Poodle", 2, 7.5);
+                System.out.println("✔ Cachorro adicionado ao cliente com sucesso!");
+
+                // Teste 6 - Remover cliente
+                System.out.println("\n=== Teste 6: Remover cliente ===");
+                clienteService.removerCliente(primeiroId);
+                System.out.println("✔ Cliente removido com sucesso!");
+            } else {
+                System.out.println("✘ Nenhum cliente cadastrado para executar testes adicionais.");
+            }
+
+        } catch (SQLException e) {
+            System.out.println("⚠ Erro de SQL: " + e.getMessage());
+        } catch (ClienteNaoEncontradoException e) {
+            System.out.println("⚠ Erro: " + e.getMessage());
+        }
+    }
+}

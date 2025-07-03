@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import src.Classes.service.ClienteService;
 import src.Classes.model.Cliente;
 import src.Classes.exception.ClienteNaoEncontradoException;
@@ -14,7 +13,10 @@ import src.Classes.exception.ClienteNaoEncontradoException;
 import java.sql.SQLException;
 import java.util.List;
 
+
+
 public class ClienteServiceTest {
+    @Test
 
     public static void main(String[] args) {
         ClienteService clienteService = new ClienteService();

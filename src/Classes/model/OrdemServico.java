@@ -92,4 +92,9 @@ public class OrdemServico {
     public void setDataFechamento(Date dataFechamento) {
         this.dataFechamento = dataFechamento;
     }
+
+    public Date getDataFechamento() {
+    return dataFechamento;
+    }
+
 }

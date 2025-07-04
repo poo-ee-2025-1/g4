@@ -1,4 +1,53 @@
+RELATÓRIO DE DESENVOLVIMENTO E CONTRIBUIÇÕES INDIVIDUAIS
 
+Projeto: Sistema de Gestão de Creche de Pet
+Autor: Gabriel Simões Rodrigues
+Matrícula: 202403006
 
-Nessa primeira etapa, nós idealizamos o projeto, que consiste em um gerenciador de creche para cachorros que busca aprimorar a eficiência e a organização desse ambiente para os Animais. Eu organizei o arquivo Read Me, procurando esclarecer todos os requisitos esperados no processo avaliativo. Sendo eles: a proposta do projeto, a problemática a ser solucionada, a motivação, objetivos, gerais e específicos, divisão de tarefas e as modelagens iniciais. Ademais, nesse primeiro momento alguns integrantes do grupo desenvolveram as primeiras ideias quanto as classes que serão utilizadas e coube a mim, como líder do grupo, organizar os pull requests.
+1. Atribuição do cargo e tarefa:
 
+Como líder do grupo, eu fiquei responsável por administrar as branchs e os processos de desenvolvimento coletivo do projeto como os reviews dos pull request, aprovar as mudanças solicitadas, resolver conflitos, realizar os merges, dentre outras atividades semelhantes.
+
+2. Contribuição de Acordo com a Atribuição:
+
+2.1 O que foi realizado:
+
+2.1.1 Em um primeiro momento, tomei a iniciativa de propor uma nova ideia de projeto que, posteriormente, seria utilizada por nós no projeto de fato, por ser algo que alcançava a expectativa do professor.
+
+2.1.2 Ademais, eu realizei as atividades que foram atribuídas a mim, como líder do grupo. Organizei e geri as branchs dos membros do grupo, os pull request, as merges e resolvi conflitos. Esses conflitos foram resolvidos, em sua maioria, por meio de conversação.
+
+2.1.3 Há algumas participações que valem a pena serem citadas, como a participação na correção de alguns bugs que estávamos tendo na interface e também reuniões em que nós tratamos sobre como o projeto estava e produzimos mais enquanto dialogávamos por meio do Discord ou pelo Whatsapp.
+
+2.2 O que não foi possível realizar:
+
+Eu e meu grupo nos demos conta que alguns aspectos do projeto que nós havíamos pensado no início seriam complexos demais para serem realizados em um prazo curto de tempo, como por exemplo o excesso de funcionalidades em um só programa.
+
+2.3 Quais foram as principais dificulades:
+
+As principais dificuldades que eu encontrei enquanto eu realizava o projeto foram:
+- Aprender a lidar com muitas ferramentas novas e complexas como o Github, SceneBuilder, BlueJ e Intellij IDEA.
+- O Github e o SceneBuilder são ferramentas muito completas, mas isso vem acompanhado de muita complexidade na hora de aprender a utilizar todas as ferramentas que serão necessárias para o desenvolvimento do projeto.
+- Já com relação ao BlueJ, ele possui toda uma estrutura didática, mas para a realização do projeto, para mim, ele se mostrou insuficiente.
+- Já quanto ao IntelliJ, ele é uma IDE mais profissional do que o BlueJ, por isso escolhi ela para realizar o que o BlueJ não estava conseguindo, mas para isso tive que aprender a usar uma nova IDE do zero e isso não foi fácil.
+- Desenvolver de fato a habilidade de manuseio das ferramentas, se tornando capaz de abstrair soluções para os problemas enfrentados durante a realização do projeto.
+
+3. Contribuição além do atribuído:
+
+Durante a realização do projeto eu auxiliei alguns membros do grupo na produção da interface e a correção de alguns bugs que nós tivemos nela em alguns momentos.
+Também auxiliei o grupo na organição do projeto, o que o programa seria capaz de fazer, o que nós precisariamos alterar, quais os bugs estavam ocorrendo e como nós iríamos corrigir eles, quem ficaria responsável por cada função são alguns exemplos da organização.
+
+4. Considerações gerais:
+
+4.1 O que aprendi:
+
+Durante a realização desse trabalho, eu pude adquirir muito conhecimento. Acredito que as principais habilidades adquiridas foram:
+- Desenvolver um maior conhecimento prático e teórico da linguagem Java e suas aplicações.
+- Aprender a manusear ferramentas muito úteis para o curso que estou fazendo (Engenharia de computação) e para o mercado de trabalho que irei ingressar consequentemente.
+- Desenvolvi uma maior capacidade de resolver problemas computacionais, como problemas em códigos, problemas da lógica do programa e até problemas na mesclagem de códigos no Github.
+- Aprimorei as capacidades de trabalhar em grupo.
+- Pude aprender muito sobre backend e frontend. Como funciona essa dinâmica, até onde vão os encargos de cada área e como elas se relacionam são alguns dos aprendizados.
+- Adiquiri uma noção, mesmo que breve, sobre banco de dados, pois decidimos implementar no nosso projeto.
+
+4.2 Conclusões:
+
+O projeto foi uma experiência muito enriquecedora. Ele agregava competências e conhecimentos muito diversos e necessários para a nossa formação enquanto engenheiros. Ele nos possibilitou evoluir em muitos aspectos técnicos e até mesmo sociais, por ter sido um trabalho em grupo. Enfim, uma ótima experência. 

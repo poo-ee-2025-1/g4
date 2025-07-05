@@ -37,3 +37,14 @@ http://www.plantuml.com/plantuml/png/VP9BZXGn343tEOLLc-6Z5c9RGgEHfdi76_e49l7KM4h
 Casos de uso:
 
 http://www.plantuml.com/plantuml/png/RP1FIaCn4CRtESNGVH7RMdTIgOXByO_x8Mzy3IQPCfcinBleoWDu0tinypGAmOIiVlmoa-_R94NH7BmndXuLb47Sk5EuS49M7KTJ3bfbWSiSRG67Dt4yqKd0E7g2sQrBIW5X8DWMlACPF1i3a1DPJ4NOue191GNsf0a81ewSPe09xhV7ZNe-KXoAUCNolQfAYtRUZkpJtCKZpbg5PIjmoD5P5B0Su2uh2_tkMpNc0mbSuuY1ed8rJXhZXZpguKCS0u7bgCAUfgnxeKJny8xrsVhVOEM14vHhVmhuotngp4kncrBdyxFQHWSl-dZPnwiE_dojmJfytUVJDpSKXnpy5m00
+
+As ferramentas utilizadas foram: 
+
+-BlueJ
+-Intellij
+-SceneBuilder
+
+E as bibliotecas usadas foram: 
+
+-JavaFx
+-Jrm sqlite
